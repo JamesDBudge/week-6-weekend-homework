@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Animal Form</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <script src="js/app.js"></script>
+  <h1>Hi! Add your favourite animals here!</h1>
+</head>
+<body>
+  <div id="reset">
+    <!-- <button type="delete-all" name="delete-all" value="delete-all"></button> -->
+    <input type="submit" value="delete all" action="Refresh" onclick="history.go(0)">
+
+  </div>
+
+  <div id="questions">
+    <form id="new-animal" action="index.html" method="post">
+
+      <label for="species-text">What species is your favourite animal? </label>
+      <input type="text" id="speciestext" value="Velociraptor">
+
+      <label for="selectconservationstatus">What conservation status does this animal have? </label>
+      <select id="selectconservationstatus">
+        <option value="Extinct">Extinct</option>
+        <option value="Extinct in the wild">Extinct in the wild</option>
+        <option value="Critically Endangered">Critically Endangered</option>
+        <option value="Endangered">Endangered</option>
+        <option value="Vulnerable">Vulnerable</option>
+        <option value="Near Threatened">Near Threatened</option>
+        <option value="Least Concern">Least Concern</option>
+        <option value="Data Deficient">Data Deficient</option>
+        <option value="Not Evaluated">Not Evaluated</option>
+      </select>
+
+
+      <label for="selectcontinent">What continent does this animal inhabit? </label>
+      <select id="selectcontinent">
+        <option value="Antarctica">Antarctica</option>
+        <option value="Arctic">Arctic</option>
+        <option value="America">America</option>
+        <option value="Australia">Australia</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+        <option value="Oceania">Oceania</option>
+      </select>
+
+
+      <label for="submit-button">Thanks!</label>
+      <button type="submit" value="save" id="submit-button" >Add Animal</button>
+    </form>
+  </div>
+
+  <div id="added-animals">
+
+    <ul id="animal-list">
+
+    </ul>
+
+
+  </div>
+
+</body>
+</html>

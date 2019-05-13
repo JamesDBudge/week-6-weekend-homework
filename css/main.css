@@ -1,0 +1,23 @@
+body {
+  font-family: sans-serif;
+}
+
+li {
+  display: inline-block;
+  border: 5px SkyBlue solid;
+  margin: 10px;
+  background-color: Lavender;
+  padding: 5px;
+}
+
+h3 {
+
+}
+
+h4 {
+  color: OrangeRed;
+}
+
+p {
+  color: Navy;
+}
